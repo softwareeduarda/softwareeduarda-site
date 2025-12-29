@@ -140,8 +140,8 @@ footer {
 }
 
 .project-card img.project-pic {
-    width: 80px;       /* largura menor */
-    height: 80px;      /* altura igual para ficar quadrada */
+    width: 50px;       /* largura menor */
+    height: 50px;      /* altura igual para ficar quadrada */
     border-radius: 10px;
     object-fit: cover; /* mantém proporção e centraliza a imagem */
     margin-bottom: 10px;
