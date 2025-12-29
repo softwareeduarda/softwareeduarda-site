@@ -120,12 +120,11 @@ footer {
     gap: 20px;
     justify-content: center;
 }
-
 .project-card {
     background-color: #f8f0fc;
     border-radius: 15px;
     padding: 15px;
-    width: 250px;
+    width: 200px; /* reduz o tamanho do card */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -137,11 +136,14 @@ footer {
 }
 
 .project-card img.project-pic {
-    width: 60px;       /* define a largura que você quer */
-    height: 60px;      /* altura fixa para ficar quadradinha, proporcional */
+    width: 80px;       /* tamanho fixo da imagem */
+    height: 80px;      /* mantém proporção quadradinha */
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* centraliza a imagem */
 }
 
 .project-card h3 {
