@@ -101,3 +101,18 @@ footer {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+/* Header com foto ao lado do nome */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* espaço entre foto e texto */
+}
+
+.profile-pic {
+    width: 60px;       /* tamanho da foto */
+    height: 60px;      /* altura igual para ficar quadradinha */
+    border-radius: 50%; /* deixa redonda */
+    object-fit: cover;
+}
