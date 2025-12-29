@@ -116,3 +116,43 @@ footer {
     border-radius: 50%; /* deixa redonda */
     object-fit: cover;
 }
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #f8f0fc;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.project-card img.project-pic {
+    width: 80px;       /* largura menor */
+    height: 80px;      /* altura igual para ficar quadrada */
+    border-radius: 10px;
+    object-fit: cover; /* mantém proporção e centraliza a imagem */
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    color: #bd7fe3;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #333;
+}
