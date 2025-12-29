@@ -140,8 +140,8 @@ footer {
 }
 
 .project-card img.project-pic {
-    max-width: 50px;       /* limita largura máxima */
-    max-height: 50px;      /* limita altura máxima */
+    max-width: 150px;       /* limita largura máxima */
+    max-height: 150px;      /* limita altura máxima */
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 10px;
