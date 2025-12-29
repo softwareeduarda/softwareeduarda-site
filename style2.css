@@ -1,44 +1,89 @@
-/* Seção de Projetos */
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+/* Fonte */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
 }
 
-.project-card {
+/* Cabeçalho com gradiente roxo pastel */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #bd7fe3, #d4a3f0);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #4c2e6f;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #bd7fe3;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
     background-color: #f8f0fc;
     border-radius: 15px;
-    padding: 15px;
-    width: 200px; /* tamanho menor do card */
+    margin-bottom: 30px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-}
-
-.project-card img.project-pic {
-    width: 80px;       /* largura da imagem */
-    height: 80px;      /* altura da imagem */
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /* centraliza a imagem */
-}
-
-.project-card h3 {
+section h2 {
     color: #bd7fe3;
-    margin-bottom: 10px;
-    font-size: 1em;
+    margin-bottom: 20px;
 }
 
-.project-card p {
-    font-size: 0.85em;
-    color: #333;
+/* Lista de habilidades */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Links de contato */
+a {
+    color: #6a3fa3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #bd7fe3, #d4a3f0);
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
