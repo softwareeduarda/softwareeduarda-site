@@ -138,7 +138,7 @@ footer {
 
 .project-card img.project-pic {
     .project-card img.project-pic {
-    width: 80%;       /* reduz a largura da imagem dentro do card */
+    width: 30%;       /* reduz a largura da imagem dentro do card */
     height: auto;     /* mantém a proporção da imagem */
     object-fit: cover;
     border-radius: 10px;
