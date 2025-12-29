@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Cabeçalho com gradiente roxo pastel */
+/* Cabeçalho com gradiente roxo pastel e foto ao lado do nome */
 header {
     text-align: center;
     padding: 50px 20px;
@@ -16,6 +16,20 @@ header {
     color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* espaço entre foto e texto */
+}
+
+.profile-pic {
+    width: 60px;       /* tamanho da foto */
+    height: 60px;      /* altura igual para ficar quadradinha */
+    border-radius: 50%; /* deixa redonda */
+    object-fit: cover;
 }
 
 header h1 {
