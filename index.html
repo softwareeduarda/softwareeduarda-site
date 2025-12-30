@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Eduarda | Portfólio</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
+
+<!-- HEADER -->
+<header>
     <div class="header-content">
         <img src="foto-profissional.jpg" alt="Maria Eduarda" class="profile-pic">
         <div class="header-text">
@@ -19,66 +22,127 @@
     </div>
 </header>
 
-    <!-- Navegação -->
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#o-que-faco">O que faço</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-    </nav>
+<!-- NAV -->
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#o-que-faco">O que faço</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+</nav>
 
-    <!-- Seção Sobre -->
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Sou estudante de Engenharia de Software e estou construindo projetos reais com programação e IA, documentando meu processo de aprendizado.</p>
-    </section>
+<!-- SOBRE -->
+<section id="sobre">
+    <h2>Sobre</h2>
+    <p>
+        Sou estudante de Engenharia de Software e estou construindo projetos reais com programação e IA,
+        documentando meu processo de aprendizado.
+    </p>
+</section>
 
-    <!-- Seção O que faço -->
-    <section id="o-que-faco">
-        <h2>O que eu faço</h2>
-        <ul>
-            <li>Sistemas simples em Python</li>
-            <li>Automação de processos</li>
-            <li>Estudos e aplicações em IA</li>
-        </ul>
-    </section>
+<!-- O QUE FAÇO -->
+<section id="o-que-faco">
+    <h2>O que eu faço</h2>
+    <ul>
+        <li>Sistemas simples em Python</li>
+        <li>Automação de processos</li>
+        <li>Estudos e aplicações em IA</li>
+    </ul>
+</section>
 
+<!-- PROJETOS -->
 <section id="projetos">
     <h2>Projetos</h2>
+
     <div class="projects-container">
 
         <div class="project-card">
             <img src="marmitaria1.jpg" alt="Projeto Marmitaria 1" class="project-pic project-img">
             <h3>Dom Emílio Marmitex - Sistema</h3>
-            <p>Sistema em Python para gestão de pedidos, com integração de impressora, tele/retirada e fluxo rápido para cozinha.</p>
+            <p>
+                Sistema em Python para gestão de pedidos, com integração de impressora,
+                tele/retirada e fluxo rápido para cozinha.
+            </p>
         </div>
 
         <div class="project-card">
             <img src="marmitaria2.jpg" alt="Projeto Marmitaria 2" class="project-pic project-img">
             <h3>Dom Emílio Marmitex - Fluxo de Pedidos</h3>
-            <p>Automação do processo de pedidos com seleção de horários, diferenciação de entrega e retirada.</p>
+            <p>
+                Automação do processo de pedidos com seleção de horários,
+                diferenciação de entrega e retirada.
+            </p>
         </div>
 
         <div class="project-card">
             <img src="marmitaria3.jpg" alt="Projeto Marmitaria 3" class="project-pic project-img">
             <h3>Dom Emílio Marmitex - Interface</h3>
-            <p>Interface simples e intuitiva, pensada para uso rápido no balcão e redução de erros.</p>
+            <p>
+                Interface simples e intuitiva, pensada para uso rápido no balcão
+                e redução de erros.
+            </p>
         </div>
 
     </div>
 </section>
-    
-    <!-- Seção Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Instagram: <a href="https://www.instagram.com/software.eduarda" target="_blank">@software.eduarda</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/maria-eduarda-brum-8b0256321" target="_blank">linkedin.com/in/maria-eduarda-brum-8b0256321</a></p>
-        <p>WhatsApp: <a href="https://wa.me/55996590274" target="_blank">+55 (55) 99659-0274</a></p>
-    </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2025 Maria Eduarda</p>
-    </footer>
+<!-- CONTATO -->
+<section id="contato">
+    <h2>Contato</h2>
+    <p>
+        Instagram:
+        <a href="https://www.instagram.com/software.eduarda" target="_blank">
+            @software.eduarda
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/maria-eduarda-brum-8b0256321" target="_blank">
+            linkedin.com/in/maria-eduarda-brum-8b0256321
+        </a>
+    </p>
+
+    <p>
+        WhatsApp:
+        <a href="https://wa.me/55996590274" target="_blank">
+            +55 (55) 99659-0274
+        </a>
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Maria Eduarda</p>
+</footer>
+
+<!-- MODAL -->
+<div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+<!-- SCRIPT -->
+<script>
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-img");
+    const images = document.querySelectorAll(".project-img");
+    const closeBtn = document.querySelector(".close");
+
+    images.forEach(img => {
+        img.addEventListener("click", () => {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        });
+    });
+
+    closeBtn.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    modal.onclick = () => {
+        modal.style.display = "none";
+    };
+</script>
+
 </body>
 </html>
